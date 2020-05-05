@@ -14,7 +14,7 @@ class Base64Image extends Rule
      *
      * @return void
      */
-    public function __construct(array $allow_types = [])
+    public function __construct(...$allow_types)
     {
         if (count($allow_types) > 0) {
             $this->allow_types = $allow_types;
@@ -28,7 +28,7 @@ class Base64Image extends Rule
      * @param  mixed  $value
      * @return bool
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {       
         if (!Str::containsAll($value, ['data:image/', 'base64,'])) {
             return false;
@@ -57,7 +57,7 @@ class Base64Image extends Rule
      *
      * @return string
      */
-    public function message()
+    public function message(): string
     {
         return $this->getValidationMessage(Str::snake(class_basename($this)), __("The :attribute must be a valid base64 image string and image type."));
     }
