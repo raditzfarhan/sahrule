@@ -56,6 +56,9 @@ return [
     ...
 ];
 ```
+## Change log
+
+Please see the [changelog](CHANGELOG.md) for more information on what has changed recently.
 
 ## Credits
 
