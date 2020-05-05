@@ -1,12 +1,13 @@
 <?php
+
 namespace RaditzFarhan\SahRule;
 
 use Illuminate\Contracts\Validation\Rule as BaseRule;
 
-abstract  class Rule implements BaseRule
+abstract class Rule implements BaseRule
 {
     /**
-     * Get local validation message, otherwise return default message
+     * Get local validation message, otherwise return default message.
      *
      * @param  string  $attr
      * @param  mixed  $message
