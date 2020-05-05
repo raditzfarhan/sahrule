@@ -1,6 +1,8 @@
 # SahRule
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://packagist.org/packages/raditzfarhan/sahrule)
+[![Latest Stable Version](https://poser.pugx.org/raditzfarhan/sahrule/v/stable?format=flat-square)](https://packagist.org/packages/raditzfarhan/sahrule)
+[![Total Downloads](https://img.shields.io/packagist/dt/raditzfarhan/sahrule?style=flat-square)](https://packagist.org/packages/raditzfarhan/sahrule)
+[![License](https://poser.pugx.org/raditzfarhan/sahrule/license?format=flat-square)](https://packagist.org/packages/raditzfarhan/sahrule)
 [![StyleCI](https://github.styleci.io/repos/7548986/shield?style=square)](https://github.com/raditzfarhan/sahrule)
 
 This package provides missing Laravel validation rules.
