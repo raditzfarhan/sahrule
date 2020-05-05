@@ -19,7 +19,7 @@ class Base64MaxImageSize extends Rule
      */
     public function __construct($max_size = 2000000)
     {
-            $this->max_size = $max_size;        
+        $this->max_size = $max_size;
     }
 
     /**
