@@ -11,7 +11,7 @@ This package provides missing Laravel validation rules.
 Via Composer
 
 ``` bash
-$ composer require raditzfarhan/sahrule:^1.0
+$ composer require raditzfarhan/sahrule
 ```
 
 ## Usage
