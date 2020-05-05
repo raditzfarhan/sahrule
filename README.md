@@ -41,7 +41,7 @@ All rules are under `RaditzFarhan\SahRule\Rules` namespace.
 
 | Rule          | Description  | Example |  
 |---------------|--------------|--------------------------------------|
-| Base64Image   | Validate a base64 image string. Pre-defined allowed image types are **jpg**, **jpeg**, **png**, **gif**, **bmp** and **tiff**. | default: `new Base64Image`<br/>specify allowed types:  `new Base64Image('jpg', 'png')` |
+| Base64Image   | Validate a base64 image string. Pre-defined allowed image types are **jpg**, **jpeg**, **png**, **gif**, **bmp** and **tiff**. | `new Base64Image`<br/>`new Base64Image('jpg', 'png')` |
 
 ## Validation Message
 
