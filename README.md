@@ -1,9 +1,10 @@
-<p align="center">
-    <a href="https://github.com/raditzfarhan/sahrule"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License"></a>    
-    <a href="https://github.com/raditzfarhan/sahrule"><img src="https://github.styleci.io/repos/7548986/shield?style=square" alt="styleci"></img></a>
-</p>
-
 # SahRule
+
+[![Latest Stable Version](https://poser.pugx.org/raditzfarhan/sahrule/v/stable?format=flat-square)](https://packagist.org/packages/raditzfarhan/sahrule)
+[![Total Downloads](https://img.shields.io/packagist/dt/raditzfarhan/sahrule?style=flat-square)](https://packagist.org/packages/raditzfarhan/sahrule)
+[![License](https://poser.pugx.org/raditzfarhan/sahrule/license?format=flat-square)](https://packagist.org/packages/raditzfarhan/sahrule)
+[![StyleCI](https://github.styleci.io/repos/7548986/shield?style=square)](https://github.com/raditzfarhan/sahrule)
+
 This package provides missing Laravel validation rules.
 
 ## Installation
@@ -11,7 +12,7 @@ This package provides missing Laravel validation rules.
 Via Composer
 
 ``` bash
-$ composer require raditzfarhan/sahrule:^1.0
+$ composer require raditzfarhan/sahrule
 ```
 
 ## Usage
@@ -42,6 +43,7 @@ All rules are under `RaditzFarhan\SahRule\Rules` namespace.
 | Rule          | Description  | Example |  
 |---------------|--------------|--------------------------------------|
 | Base64Image   | Validate a base64 image string. Pre-defined allowed image types are **jpg**, **jpeg**, **png**, **gif**, **bmp** and **tiff**. | `new Base64Image`<br/>`new Base64Image('jpg', 'png')` |
+| Base64MaxImageSize | Validate a base64 image size. Default max size is 2 MB. Pass your own max size in byte (B). | `new Base64MaxImageSize`<br/>`new Base64MaxImageSize(500)`|
 
 ## Validation Message
 

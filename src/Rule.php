@@ -17,4 +17,21 @@ abstract class Rule implements BaseRule
     {
         return __("validation.$attr") === "validation.$attr" ? $message : __("validation.$attr");
     }
+
+    /**
+     * Change bytes size to human readable format.
+     *
+     * @param  string  $bytes
+     * @return string
+     */
+    public static function bytesToHuman($bytes)
+    {
+        $units = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+
+        for ($i = 0; $bytes > 1024; $i++) {
+            $bytes /= 1024;
+        }
+
+        return round($bytes, 2) . ' ' . $units[$i];
+    }
 }
