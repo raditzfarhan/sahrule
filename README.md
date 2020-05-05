@@ -43,7 +43,8 @@ All rules are under `RaditzFarhan\SahRule\Rules` namespace.
 | Rule          | Description  | Example |  
 |---------------|--------------|--------------------------------------|
 | Base64Image   | Validate a base64 image string. Pre-defined allowed image types are **jpg**, **jpeg**, **png**, **gif**, **bmp** and **tiff**. | `new Base64Image`<br/>`new Base64Image('jpg', 'png')` |
-| Base64MaxImageSize | Validate a base64 image size. Default max size is 2 MB. Pass your own max size in byte (B). | `new Base64MaxImageSize`<br/>`new Base64MaxImageSize(500)`|
+| Base64MaxImageSize | Validate a base64 image size. Default max size is **2 MB**. Pass your own max size in byte (B). | `new Base64MaxImageSize`<br/>`new Base64MaxImageSize(500)`|
+| StrongPassword | The password must be at least 8 alphanumeric characters long, include one lowercase, one uppercase letter and one number. | `new StrongPassword`|
 
 ## Validation Message
 
